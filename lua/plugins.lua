@@ -7,6 +7,7 @@ return require('packer').startup(function()
     use 'mhinz/vim-startify'
     use 'kyazdani42/nvim-web-devicons'
     use 'akinsho/nvim-bufferline.lua'
+    use 'kyazdani42/nvim-tree.lua'
 
     use 'christianchiarulli/nvcode-color-schemes.vim'
 

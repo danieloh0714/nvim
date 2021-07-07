@@ -8,9 +8,6 @@ vim.g.mapleader = ' '
 -- no hl
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', { noremap = true, silent = true })
 
--- explorer
-vim.api.nvim_set_keymap('n', '<Leader>e', ':Lexplore<CR>', { noremap = true, silent = true })
-
 -- continuous indenting
 vim.api.nvim_set_keymap('v', '<', '<gv', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '>', '>gv', { noremap = true, silent = true })
