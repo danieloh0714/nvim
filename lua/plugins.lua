@@ -3,6 +3,7 @@ return require('packer').startup(function()
 
     use 'neovim/nvim-lspconfig'
     use 'nvim-treesitter/nvim-treesitter'
+    use 'hrsh7th/nvim-compe'
 
     use 'mhinz/vim-startify'
     use 'kyazdani42/nvim-web-devicons'
