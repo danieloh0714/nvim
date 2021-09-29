@@ -10,7 +10,7 @@ return require('packer').startup(function()
     use 'akinsho/nvim-bufferline.lua'
     use 'kyazdani42/nvim-tree.lua'
 
-    use 'christianchiarulli/nvcode-color-schemes.vim'
+    use 'rose-pine/neovim'
 
     use 'windwp/nvim-autopairs'
 end)
