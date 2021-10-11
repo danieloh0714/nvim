@@ -2,13 +2,11 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 
     use 'neovim/nvim-lspconfig'
-    use 'nvim-treesitter/nvim-treesitter'
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use 'hrsh7th/nvim-compe'
 
-    use {
-      'nvim-telescope/telescope.nvim',
-      requires = { {'nvim-lua/plenary.nvim'} }
-    }
+    use 'nvim-lua/plenary.nvim'
+    use 'nvim-telescope/telescope.nvim'
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
     use 'mhinz/vim-startify'
