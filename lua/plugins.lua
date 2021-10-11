@@ -9,6 +9,7 @@ return require('packer').startup(function()
     use 'kyazdani42/nvim-web-devicons'
     use 'akinsho/nvim-bufferline.lua'
     use 'kyazdani42/nvim-tree.lua'
+    use 'famiu/feline.nvim'
 
     use 'rose-pine/neovim'
 
