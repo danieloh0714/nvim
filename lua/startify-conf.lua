@@ -19,9 +19,6 @@ vim.g.startify_bookmarks = {
         l = '$HOME/.config/nvim/lua',
     },
     {
-        p = '$HOME/.config/nvim/lua/plugins.lua',
-    },
-    {
         z = '$HOME/.config/zsh/.zshrc',
     },
 }

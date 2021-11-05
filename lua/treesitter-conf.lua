@@ -1,16 +1,24 @@
 require('nvim-treesitter.configs').setup {
-    ensure_installed = {
-      'commonlisp',
-      'css',
-      'go',
-      'html',
-      'javascript',
-      'json',
-      'lua',
-      'python',
-      'typescript',
+  autotag = {
+    enable = true,
+    filetypes = {
+      'html', 'javascript', 'javascriptreact', 'typescriptreact', 'vue',
     },
-    highlight = { enable = true },
-    indent = { enable = true },
-    matchup = { enable = true },
+  },
+  ensure_installed = {
+    'commonlisp',
+    'css',
+    'go',
+    'html',
+    'javascript',
+    'json',
+    'lua',
+    'python',
+    'r',
+    'typescript',
+    'vue',
+  },
+  highlight = { enable = true },
+  indent = { enable = true },
+  matchup = { enable = true },
 }
