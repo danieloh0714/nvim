@@ -14,6 +14,5 @@ set.autoindent = true
 set.smartindent = true -- make indenting smart
 set.termguicolors = true -- use true colors
 set.showmode = false -- don't show things like -- INSERT --
---set.laststatus = 0 -- remove bottom status line
 
 vim.cmd 'autocmd ColorScheme * hi Normal guibg=NONE ctermbg=NONE'

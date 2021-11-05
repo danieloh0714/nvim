@@ -11,5 +11,5 @@ require('telescope').setup{
 
 require('telescope').load_extension('fzf')
 
-vim.api.nvim_set_keymap('n', '<Leader>t', ':Telescope find_files<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>lg', ':Telescope live_grep<CR>', { noremap = true, silent = true })
