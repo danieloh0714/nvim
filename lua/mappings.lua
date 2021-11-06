@@ -13,3 +13,6 @@ api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', { noremap = true, si
 -- continuous indenting
 api.nvim_set_keymap('v', '<', '<gv', { noremap = true, silent = true })
 api.nvim_set_keymap('v', '>', '>gv', { noremap = true, silent = true })
+
+-- toggle windows
+api.nvim_set_keymap('n', '<Leader>w', [[<C-w>w]], { noremap = true, silent = true })
