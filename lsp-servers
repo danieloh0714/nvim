@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# html, cssls, jsonls
+npm i -g vscode-langservers-extracted
+
+# pyright
+npm i -g pyright
+
+# tailwindcss
+npm i -g @tailwindcss/language-server
+
+# tsserver
+npm i -g typescript typescript-language-server

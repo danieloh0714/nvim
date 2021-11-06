@@ -27,5 +27,5 @@ require('lualine').setup {
     lualine_z = {}
   },
   tabline = {},
-  extensions = {},
+  extensions = {'nvim-tree', 'toggleterm'},
 }

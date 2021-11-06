@@ -2,7 +2,7 @@ require('nvim-treesitter.configs').setup {
   autotag = {
     enable = true,
     filetypes = {
-      'html', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue',
+      'html', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact',
     },
   },
   ensure_installed = {
