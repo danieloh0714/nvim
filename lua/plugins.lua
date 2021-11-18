@@ -12,15 +12,15 @@ return require('packer').startup(function()
 
 
     use 'nvim-lua/plenary.nvim'
-    use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope.nvim' -- file finder
     use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
-    use 'mhinz/vim-startify'
-    use 'kyazdani42/nvim-web-devicons'
-    use 'akinsho/nvim-bufferline.lua'
-    use 'kyazdani42/nvim-tree.lua'
-    use 'akinsho/toggleterm.nvim'
-    use 'nvim-lualine/lualine.nvim'
+    use 'mhinz/vim-startify' -- nvim starting page
+    use 'kyazdani42/nvim-web-devicons' -- icons
+    use 'akinsho/nvim-bufferline.lua' -- tab-like buffers on top
+    use 'kyazdani42/nvim-tree.lua' -- tree explorer on side
+    use 'akinsho/toggleterm.nvim' -- toggle terminal on bottom
+    use 'nvim-lualine/lualine.nvim' -- statusline on bottom
 
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'

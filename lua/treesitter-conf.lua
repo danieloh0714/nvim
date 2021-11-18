@@ -6,6 +6,8 @@ require('nvim-treesitter.configs').setup {
     },
   },
   ensure_installed = {
+    'c',
+    'cpp',
     'commonlisp',
     'css',
     'go',
@@ -14,6 +16,7 @@ require('nvim-treesitter.configs').setup {
     'json',
     'lua',
     'python',
+    'tsx',
     'typescript',
   },
   highlight = { enable = true },
