@@ -1,9 +1,8 @@
 require('bufferline').setup {
    options = {
       offsets = { { filetype = 'NvimTree', text = '', padding = 1 } },
-      buffer_close_icon = '',
+      buffer_close_icon = '',
       modified_icon = '',
-      -- close_icon = '%@NvChad_bufferline_quitvim@%X',
       close_icon = '',
       show_close_icon = true,
       left_trunc_marker = '',
@@ -17,7 +16,7 @@ require('bufferline').setup {
       show_buffer_close_icons = true,
       separator_style = 'thin',
       always_show_bufferline = true,
-      diagnostics = 'nvim_lsp', -- 'or nvim_lsp'
+      diagnostics = 'nvim_lsp',
       custom_filter = function(buf_number)
          -- Func to filter out our managed/persistent split terms
          local present_type, type = pcall(function()
