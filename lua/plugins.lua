@@ -1,19 +1,25 @@
 return require('packer').startup(function()
-    use 'wbthomason/packer.nvim'
+    use 'wbthomason/packer.nvim' -- plugin manager
 
-    use 'rose-pine/neovim'
+    use 'rose-pine/neovim' -- rose pine colorscheme
 
-    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-    use 'neovim/nvim-lspconfig'
+    use 'windwp/nvim-autopairs' -- autopairs
+    use 'windwp/nvim-ts-autotag' -- autotags for html, jsx, tsx, etc.
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
+
+    use 'neovim/nvim-lspconfig' --- language server protocol
     use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
     use 'hrsh7th/nvim-cmp' -- autocompletion
     use 'saadparwaiz1/cmp_luasnip' -- snippets source for nvim-cmp
     use 'L3MON4D3/LuaSnip' -- snippets plugin
 
-
-    use 'nvim-lua/plenary.nvim'
-    use 'nvim-telescope/telescope.nvim' -- file finder
-    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use {
+      'nvim-telescope/telescope.nvim', -- file finder
+      requires = {
+        { 'nvim-lua/plenary.nvim' },
+      },
+    }
+    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- fuzzy finder
 
     use 'mhinz/vim-startify' -- nvim starting page
     use 'kyazdani42/nvim-web-devicons' -- icons
@@ -21,7 +27,4 @@ return require('packer').startup(function()
     use 'kyazdani42/nvim-tree.lua' -- tree explorer on side
     use 'akinsho/toggleterm.nvim' -- toggle terminal on bottom
     use 'nvim-lualine/lualine.nvim' -- statusline on bottom
-
-    use 'windwp/nvim-autopairs'
-    use 'windwp/nvim-ts-autotag'
 end)

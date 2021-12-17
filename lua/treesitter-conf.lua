@@ -9,6 +9,7 @@ require('nvim-treesitter.configs').setup {
     'c',
     'cpp',
     'css',
+    'go',
     'html',
     'javascript',
     'json',
@@ -18,6 +19,5 @@ require('nvim-treesitter.configs').setup {
     'typescript',
   },
   highlight = { enable = true },
-  indent = { enable = true },
   matchup = { enable = true },
 }
