@@ -6,9 +6,10 @@ return require('packer').startup(function()
   use 'LunarVim/darkplus.nvim' -- colorscheme
 
   -- Treesitter
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
   use 'windwp/nvim-autopairs' -- autopairs
   use 'windwp/nvim-ts-autotag' -- autotags for html, jsx, tsx, etc.
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
+  use 'lukas-reineke/indent-blankline.nvim' -- add indentation visual guides
 
   -- LSP
   use 'neovim/nvim-lspconfig' --- language server protocol
