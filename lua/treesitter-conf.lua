@@ -14,11 +14,11 @@ require('nvim-treesitter.configs').setup {
     'javascript',
     'json',
     'lua',
+    'markdown',
     'prisma',
     'python',
     'tsx',
     'typescript',
   },
   highlight = { enable = true },
-  matchup = { enable = true },
 }
