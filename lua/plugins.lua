@@ -23,7 +23,7 @@ return require('packer').startup(function()
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- fuzzy finder
   use 'kyazdani42/nvim-tree.lua' -- tree explorer on side
   use 'akinsho/nvim-bufferline.lua' -- tab-like buffers on top
-  use 'mhinz/vim-startify' -- starting page
+  use 'goolord/alpha-nvim' -- starting page
 
   -- other
   use 'kyazdani42/nvim-web-devicons' -- icons

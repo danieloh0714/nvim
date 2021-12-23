@@ -1,29 +1,7 @@
-vim.g.startify_enable_special = 0
+local alpha = require('alpha')
+local startify = require('alpha.themes.startify')
 
-vim.g.startify_lists = {
-  {
-    type = 'files',
-    header = {'   Recently Opened Files'},
-  },
-  {
-    type = 'bookmarks',
-    header = {'   Bookmarks'},
-  },
-}
-
-vim.g.startify_bookmarks = {
-  {
-    i = '$HOME/.config/nvim/init.lua',
-  },
-  {
-    l = '$HOME/.config/nvim/lua',
-  },
-  {
-    z = '$HOME/.config/zsh/.zshrc',
-  },
-}
-
-vim.g.startify_custom_header = {
+startify.section.header.val = {
   [[         _______________________________________________________________________    ]],
   [[       / \                                                                      \   ]],
   [[      |   |                                                                     |   ]],
@@ -37,3 +15,18 @@ vim.g.startify_custom_header = {
   [[          |  /                                                                     /]],
   [[          \_/_____________________________________________________________________/ ]],
 }
+
+startify.section.top_buttons.val = {}
+startify.section.mru_cwd.val = { { type = 'padding', val = 0 } }
+startify.section.bookmarks = {
+  {
+    i = '$HOME/.config/nvim/init.lua',
+  },
+}
+startify.section.bottom_buttons.val = {
+  startify.button('i', 'init.lua', ':e $HOME/.config/nvim/init.lua<CR>'),
+  startify.button('l', 'lua', ':e $HOME/.config/nvim/lua<CR>'),
+  startify.button('z', 'zshrc', ':e $HOME/.config/zsh/.zshrc<CR>'),
+}
+
+alpha.setup(startify.opts)

@@ -4,12 +4,12 @@ require('plugins')
 require('settings')
 
 -- plugin configs
+require('alpha-conf')
 require('autopairs-conf')
 require('bufferline-conf')
 require('cmp-conf')
 require('lsp')
 require('lualine-conf')
-require('startify-conf')
 require('telescope-conf')
 require('toggleterm-conf')
 require('tree-conf')
