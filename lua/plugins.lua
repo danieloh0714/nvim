@@ -1,30 +1,31 @@
 return require('packer').startup(function()
-    use 'wbthomason/packer.nvim' -- plugin manager
+  use 'wbthomason/packer.nvim' -- plugin manager
 
-    use 'rose-pine/neovim' -- rose pine colorscheme
+  -- colorscheme
+  use 'LunarVim/darkplus.nvim' -- colorscheme
 
-    use 'windwp/nvim-autopairs' -- autopairs
-    use 'windwp/nvim-ts-autotag' -- autotags for html, jsx, tsx, etc.
-    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
+  -- Treesitter
+  use 'windwp/nvim-autopairs' -- autopairs
+  use 'windwp/nvim-ts-autotag' -- autotags for html, jsx, tsx, etc.
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
 
-    use 'neovim/nvim-lspconfig' --- language server protocol
-    use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-    use 'hrsh7th/nvim-cmp' -- autocompletion
-    use 'saadparwaiz1/cmp_luasnip' -- snippets source for nvim-cmp
-    use 'L3MON4D3/LuaSnip' -- snippets plugin
+  -- LSP
+  use 'neovim/nvim-lspconfig' --- language server protocol
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+  use 'hrsh7th/nvim-cmp' -- autocompletion
+  use 'saadparwaiz1/cmp_luasnip' -- snippets source for nvim-cmp
+  use 'L3MON4D3/LuaSnip' -- snippets plugin
 
-    use {
-      'nvim-telescope/telescope.nvim', -- file finder
-      requires = {
-        { 'nvim-lua/plenary.nvim' },
-      },
-    }
-    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- fuzzy finder
+  -- navigation
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-telescope/telescope.nvim' -- file finder
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- fuzzy finder
+  use 'kyazdani42/nvim-tree.lua' -- tree explorer on side
+  use 'akinsho/nvim-bufferline.lua' -- tab-like buffers on top
+  use 'mhinz/vim-startify' -- starting page
 
-    use 'mhinz/vim-startify' -- nvim starting page
-    use 'kyazdani42/nvim-web-devicons' -- icons
-    use 'akinsho/nvim-bufferline.lua' -- tab-like buffers on top
-    use 'kyazdani42/nvim-tree.lua' -- tree explorer on side
-    use 'akinsho/toggleterm.nvim' -- toggle terminal on bottom
-    use 'nvim-lualine/lualine.nvim' -- statusline on bottom
+  -- other
+  use 'kyazdani42/nvim-web-devicons' -- icons
+  use 'akinsho/toggleterm.nvim' -- toggle terminal on bottom
+  use 'nvim-lualine/lualine.nvim' -- statusline on bottom
 end)

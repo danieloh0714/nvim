@@ -1,26 +1,26 @@
 vim.g.startify_enable_special = 0
 
 vim.g.startify_lists = {
-    {
-        type = 'files',
-        header = {'   Recently Opened Files'},
-    },
-    {
-        type = 'bookmarks',
-        header = {'   Bookmarks'},
-    },
+  {
+    type = 'files',
+    header = {'   Recently Opened Files'},
+  },
+  {
+    type = 'bookmarks',
+    header = {'   Bookmarks'},
+  },
 }
 
 vim.g.startify_bookmarks = {
-    {
-        i = '$HOME/.config/nvim/init.lua',
-    },
-    {
-        l = '$HOME/.config/nvim/lua',
-    },
-    {
-        z = '$HOME/.config/zsh/.zshrc',
-    },
+  {
+    i = '$HOME/.config/nvim/init.lua',
+  },
+  {
+    l = '$HOME/.config/nvim/lua',
+  },
+  {
+    z = '$HOME/.config/zsh/.zshrc',
+  },
 }
 
 vim.g.startify_custom_header = {

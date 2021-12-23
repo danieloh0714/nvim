@@ -1,22 +1,23 @@
-local api = vim.api
+local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
 
 -- jk for exiting insert mode
-api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true, silent = true })
+keymap('i', 'jk', '<Esc>', opts)
 
 -- ctrl-backspace delete previous word while in insert mode
-api.nvim_set_keymap('i', '<C-BS>', '<C-w>', { noremap = true, silent = true })
-api.nvim_set_keymap('i', '<C-h>', '<C-w>', { noremap = true, silent = true })
-
+keymap('i', '<C-BS>', '<C-w>', opts)
+keymap('i', '<C-h>', '<C-w>', opts)
+ 
 -- set leader to space
-api.nvim_set_keymap('n', '<Space>', '<Nop>', { noremap = true, silent = true })
+keymap('n', '<Space>', '<Nop>', opts)
 vim.g.mapleader = ' '
-
+ 
 -- no hl
-api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', { noremap = true, silent = true })
+keymap('n', '<Leader>h', ':set hlsearch!<CR>', opts)
 
 -- continuous indenting
-api.nvim_set_keymap('v', '<', '<gv', { noremap = true, silent = true })
-api.nvim_set_keymap('v', '>', '>gv', { noremap = true, silent = true })
+keymap('v', '<', '<gv', opts)
+keymap('v', '>', '>gv', opts)
 
 -- toggle windows
-api.nvim_set_keymap('n', '<Leader>w', [[<C-w>w]], { noremap = true, silent = true })
+keymap('n', '<Leader>w', '<C-w>w', opts)

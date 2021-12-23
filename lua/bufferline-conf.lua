@@ -1,6 +1,6 @@
 require('bufferline').setup {
-   options = {
-      offsets = { { filetype = 'NvimTree', text = '', padding = 1 } },
+  options = {
+    offsets = { { filetype = 'NvimTree', text = '', padding = 1 } },
       buffer_close_icon = '',
       modified_icon = '',
       close_icon = '',
@@ -18,27 +18,28 @@ require('bufferline').setup {
       always_show_bufferline = true,
       diagnostics = 'nvim_lsp',
       custom_filter = function(buf_number)
-         -- Func to filter out our managed/persistent split terms
-         local present_type, type = pcall(function()
-            return vim.api.nvim_buf_get_var(buf_number, 'term_type')
-         end)
-
-         if present_type then
-            if type == 'vert' then
-               return false
-            elseif type == 'hori' then
-               return false
-            else
-               return true
-            end
-         else
-            return true
-         end
+       -- Func to filter out our managed/persistent split terms
+       local present_type, type = pcall(function()
+          return vim.api.nvim_buf_get_var(buf_number, 'term_type')
+       end)
+      
+       if present_type then
+          if type == 'vert' then
+             return false
+          elseif type == 'hori' then
+             return false
+          else
+             return true
+          end
+       else
+          return true
+       end
       end,
    },
 }
 
 -- buffer switching
-local api = vim.api
-api.nvim_set_keymap('n', '<Tab>', [[<Cmd>BufferLineCycleNext<CR>]], { noremap = true, silent = true })
-api.nvim_set_keymap('n', '<S-Tab>', [[<Cmd>BufferLineCyclePrev<CR>]], { noremap = true, silent = true })
+local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+keymap('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', opts)
+keymap('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', opts)
