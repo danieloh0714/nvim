@@ -1,5 +1,6 @@
 return require('packer').startup(function()
-  use 'wbthomason/packer.nvim' -- plugin manager
+  -- plugin manager
+  use 'wbthomason/packer.nvim'
 
   -- colorscheme
   use 'LunarVim/darkplus.nvim' -- colorscheme
@@ -26,6 +27,6 @@ return require('packer').startup(function()
 
   -- other
   use 'kyazdani42/nvim-web-devicons' -- icons
-  use 'akinsho/toggleterm.nvim' -- toggle terminal on bottom
+  use 'akinsho/toggleterm.nvim' -- toggle terminal
   use 'nvim-lualine/lualine.nvim' -- statusline on bottom
 end)
