@@ -6,8 +6,6 @@ require('nvim-treesitter.configs').setup {
     },
   },
   ensure_installed = {
-    'c',
-    'cpp',
     'css',
     'go',
     'html',
@@ -19,6 +17,7 @@ require('nvim-treesitter.configs').setup {
     'python',
     'tsx',
     'typescript',
+    'yaml',
   },
   highlight = { enable = true },
 }
