@@ -1,4 +1,4 @@
---require('colorscheme')
+require('colorscheme')
 require('mappings')
 require('plugins')
 require('settings')

@@ -2,6 +2,9 @@ return require('packer').startup(function()
   -- plugin manager
   use 'wbthomason/packer.nvim'
 
+  -- colorscheme
+  use 'folke/tokyonight.nvim'
+
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
   use 'windwp/nvim-autopairs' -- autopairs

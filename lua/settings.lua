@@ -9,6 +9,4 @@ opt.shiftwidth = 2 -- number of spaces for each indentation
 opt.tabstop = 2 -- number of spaces for a tab
 opt.signcolumn = 'no' -- no sign column
 
-vim.cmd[[highlight VertSplit cterm=NONE]]
-
 vim.g.python3_host_prog = '/usr/bin/python3'
