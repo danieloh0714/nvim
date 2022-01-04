@@ -16,8 +16,10 @@ return require('packer').startup(function()
   use 'hrsh7th/nvim-cmp' -- autocompletion
   use 'saadparwaiz1/cmp_luasnip' -- snippets source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- snippets plugin
+  use 'jose-elias-alvarez/null-ls.nvim' -- formatting
 
   -- navigation
+  use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim' -- file finder
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- fuzzy finder
