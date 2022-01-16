@@ -22,7 +22,7 @@ local on_attach = function(client, bufnr)
 end
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-local servers = { 'cssls', 'html', 'jsonls', 'pyright', 'tailwindcss', 'tsserver' }
+local servers = { 'cssls', 'html', 'jsonls', 'pyright', 'sqlls', 'tailwindcss', 'tsserver' }
 
 -- Use a loop to conveniently call 'setup' on multiple servers
 for _, lsp in ipairs(servers) do

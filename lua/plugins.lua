@@ -3,7 +3,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
-  use 'folke/tokyonight.nvim'
+  use 'sainnhe/gruvbox-material'
 
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter

@@ -1,8 +1,4 @@
-vim.g.tokyonight_style = 'night'
-vim.g.tokyonight_transparent = false
-vim.g.tokyonight_italic_comments = false
-vim.g.tokyonight_italic_functions = false
-vim.g.tokyonight_italic_keywords = false
-vim.g.tokyonight_italic_variables = false
-
-vim.cmd[[colorscheme tokyonight]]
+vim.g.gruvbox_material_palette = 'original'
+vim.g.gruvbox_material_background = 'hard'
+vim.g.gruvbox_material_transparent_background = 1
+vim.cmd[[colorscheme gruvbox-material]]
