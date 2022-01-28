@@ -21,6 +21,7 @@ startify.section.top_buttons.val = {}
 startify.section.mru_cwd.val = { { type = 'padding', val = 0 } }
 
 startify.section.bottom_buttons.val = {
+  startify.button( 'e', 'empty', ':ene <BAR> startinsert <CR>'),
   startify.button('i', 'init.lua', ':e $HOME/.config/nvim/init.lua<CR>'),
   startify.button('l', 'lua', ':e $HOME/.config/nvim/lua<CR>'),
   startify.button('p', 'plugins', ':e $HOME/.config/nvim/lua/plugins.lua<CR>'),
