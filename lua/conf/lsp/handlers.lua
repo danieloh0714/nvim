@@ -41,7 +41,7 @@ for _, server in ipairs({
   }
 
   if server == 'tailwindcss' then
-    opts = vim.tbl_deep_extend('force', require('lsp.settings.tailwindcss'), opts)
+    opts = vim.tbl_deep_extend('force', require('conf.lsp.settings.tailwindcss'), opts)
   end
 
   lsp[server].setup(opts)
