@@ -24,7 +24,7 @@ startify.section.bottom_buttons.val = {
   startify.button( 'e', 'empty', ':ene <BAR> startinsert <CR>'),
   startify.button('i', 'init.lua', ':e $HOME/.config/nvim/init.lua<CR>'),
   startify.button('l', 'lua', ':e $HOME/.config/nvim/lua<CR>'),
-  startify.button('p', 'plugins', ':e $HOME/.config/nvim/lua/plugins.lua<CR>'),
+  startify.button('p', 'polybar', ':e $HOME/.config/polybar<CR>'),
   startify.button('a', 'alacritty', ':e $HOME/.config/alacritty/alacritty.yml<CR>'),
   startify.button('z', 'zshrc', ':e $HOME/.config/zsh/.zshrc<CR>'),
   startify.button( 'q', 'quit' , ':qa<CR>'),
