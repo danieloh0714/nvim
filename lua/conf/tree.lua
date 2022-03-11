@@ -1,11 +1,13 @@
 require('nvim-tree').setup {
   auto_close = true, -- close tree when quitting nvim
-  disable_netrw = true, -- disable netrw (default file explorer)
   ignore_ft_on_setup = {
     'alpha',
   },
-  view = {
-    auto_resize = true,
+  actions = {
+    open_file = {
+      quit_on_open = true,
+      resize_window = true,
+    },
   },
 }
 
