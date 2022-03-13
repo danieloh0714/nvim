@@ -1,12 +1,11 @@
 require('nvim-tree').setup {
-  auto_close = true, -- close tree when quitting nvim
   ignore_ft_on_setup = {
     'alpha',
   },
+  auto_close = true, -- close tree when quitting nvim
   actions = {
     open_file = {
-      quit_on_open = true,
-      resize_window = true,
+      resize_window = true, -- resizes the tree when opening a file
     },
   },
 }
