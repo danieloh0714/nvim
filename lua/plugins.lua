@@ -4,6 +4,7 @@ return require('packer').startup(function()
 
   -- colorscheme
   use 'shaunsingh/nord.nvim'
+  use 'sainnhe/gruvbox-material'
 
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
