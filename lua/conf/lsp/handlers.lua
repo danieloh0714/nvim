@@ -32,6 +32,7 @@ for _, server in ipairs({
   'jsonls',
   'pyright',
   'racket_langserver',
+  'rust_analyzer',
   'tailwindcss',
   'tsserver',
 }) do
