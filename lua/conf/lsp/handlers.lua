@@ -28,6 +28,7 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 for _, server in ipairs({
   'cssls',
+  'gopls',
   'html',
   'jsonls',
   'pyright',
