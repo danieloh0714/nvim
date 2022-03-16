@@ -32,7 +32,6 @@ for _, server in ipairs({
   'html',
   'jsonls',
   'pyright',
-  'racket_langserver',
   'rust_analyzer',
   'tailwindcss',
   'tsserver',
