@@ -3,6 +3,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
+  use 'luisiacc/gruvbox-baby'
   use 'shaunsingh/nord.nvim'
 
   -- Treesitter
