@@ -6,7 +6,6 @@ return require('packer').startup(function()
   use 'luisiacc/gruvbox-baby'
   use 'shaunsingh/nord.nvim'
   use 'rose-pine/neovim'
-  use 'nekonako/xresources-nvim'
 
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
