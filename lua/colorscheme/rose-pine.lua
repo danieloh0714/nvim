@@ -1,6 +1,6 @@
 require('rose-pine').setup({
   dark_variant = 'main',
-  disable_background = false,
+  disable_background = true,
   disable_italics = true,
 })
 

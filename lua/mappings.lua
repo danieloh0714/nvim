@@ -23,4 +23,4 @@ keymap('v', '>', '>gv', opts)
 keymap('n', '<Leader>w', '<C-w>w', opts)
 
 -- compile document
-keymap('n', '<Leader>cd', ':!compile-document %<CR>', opts)
+keymap('n', '<Leader>cd', ':!compiledocument %<CR>', opts)
