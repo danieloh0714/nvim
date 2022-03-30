@@ -1,4 +1,3 @@
-local alpha = require('alpha')
 local startify = require('alpha.themes.startify')
 
 startify.section.header.val = {
@@ -26,7 +25,7 @@ startify.section.bottom_buttons.val = {
   startify.button('n', 'nvim', ':e $HOME/.config/nvim<CR>'),
   startify.button('p', 'polybar', ':e $HOME/.config/polybar<CR>'),
   startify.button('z', 'zshrc', ':e $HOME/.config/zsh/.zshrc<CR>'),
-  startify.button( 'q', 'quit' , ':qa<CR>'),
+  startify.button('q', 'quit' , ':qa<CR>'),
 }
 
-alpha.setup(startify.opts)
+require('alpha').setup(startify.opts)
