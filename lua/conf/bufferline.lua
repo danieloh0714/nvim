@@ -43,5 +43,5 @@ require('bufferline').setup {
 -- buffer switching
 local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
-keymap('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', opts)
-keymap('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', opts)
+keymap('n', '<tab>', '<cmd>BufferLineCycleNext<cr>', opts)
+keymap('n', '<s-tab>', '<cmd>BufferLineCyclePrev<cr>', opts)

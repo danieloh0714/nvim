@@ -2,25 +2,25 @@ local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- jk for exiting insert mode
-keymap('i', 'jk', '<Esc>', opts)
+keymap('i', 'jk', '<esc>', opts)
 
 -- ctrl-backspace delete previous word while in insert mode
-keymap('i', '<C-BS>', '<C-w>', opts)
-keymap('i', '<C-h>', '<C-w>', opts)
+keymap('i', '<c-bs>', '<c-w>', opts)
+keymap('i', '<c-h>', '<c-w>', opts)
  
 -- set leader to space
-keymap('n', '<Space>', '<Nop>', opts)
+keymap('n', '<space>', '<nop>', opts)
 vim.g.mapleader = ' '
  
 -- no hl
-keymap('n', '<Leader>h', ':set hlsearch!<CR>', opts)
+keymap('n', '<leader>h', ':set hlsearch!<cr>', opts)
 
 -- continuous indenting
 keymap('v', '<', '<gv', opts)
 keymap('v', '>', '>gv', opts)
 
 -- toggle windows
-keymap('n', '<Leader>w', '<C-w>w', opts)
+keymap('n', '<leader>w', '<c-w>w', opts)
 
 -- compile document
-keymap('n', '<Leader>cd', ':!compiledocument %<CR>', opts)
+keymap('n', '<leader>cd', ':!compiledocument %<cr>', opts)
