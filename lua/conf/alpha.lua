@@ -20,12 +20,12 @@ startify.section.top_buttons.val = {}
 startify.section.mru_cwd.val = { { type = 'padding', val = 0 } }
 
 startify.section.bottom_buttons.val = {
-  startify.button('a', 'alacritty', ':e $HOME/.config/alacritty/alacritty.yml<CR>'),
-  startify.button('i', 'i3', ':e $HOME/.config/i3/config<CR>'),
-  startify.button('n', 'nvim', ':e $HOME/.config/nvim<CR>'),
-  startify.button('p', 'polybar', ':e $HOME/.config/polybar<CR>'),
-  startify.button('z', 'zshrc', ':e $HOME/.config/zsh/.zshrc<CR>'),
-  startify.button('q', 'quit' , ':qa<CR>'),
+  startify.button('a', 'alacritty', ':e $HOME/.config/alacritty/alacritty.yml<cr>'),
+  startify.button('i', 'i3', ':e $HOME/.config/i3/config<cr>'),
+  startify.button('n', 'nvim', ':e $HOME/.config/nvim<cr>'),
+  startify.button('p', 'polybar', ':e $HOME/.config/polybar<cr>'),
+  startify.button('z', 'zshrc', ':e $HOME/.config/zsh/.zshrc<cr>'),
+  startify.button('q', 'quit' , ':qa<cr>'),
 }
 
-require('alpha').setup(startify.opts)
+require('alpha').setup(startify.config)
