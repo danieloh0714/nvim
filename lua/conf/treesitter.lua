@@ -28,6 +28,7 @@ require('nvim-treesitter.configs').setup {
     'prisma',
     'python',
     'rust',
+    'toml',
     'tsx',
     'typescript',
     'yaml',
