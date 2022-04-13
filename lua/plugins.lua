@@ -30,7 +30,8 @@ return require('packer').startup(function()
   use 'goolord/alpha-nvim' -- starting page
 
   -- other
-  use 'kyazdani42/nvim-web-devicons' -- icons
   use 'akinsho/toggleterm.nvim' -- toggle terminal
+  use 'kyazdani42/nvim-web-devicons' -- icons
+  use 'norcalli/nvim-colorizer.lua' -- colorizer
   use 'nvim-lualine/lualine.nvim' -- statusline on bottom
 end)
