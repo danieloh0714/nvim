@@ -24,6 +24,7 @@ require('nvim-treesitter.configs').setup {
     'json',
     'latex',
     'lua',
+    'make',
     'markdown',
     'prisma',
     'python',
