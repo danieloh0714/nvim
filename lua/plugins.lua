@@ -3,7 +3,6 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
-  use 'luisiacc/gruvbox-baby'
   use 'shaunsingh/nord.nvim'
   use 'rose-pine/neovim'
 
@@ -33,5 +32,4 @@ return require('packer').startup(function()
   use 'akinsho/toggleterm.nvim' -- toggle terminal
   use 'kyazdani42/nvim-web-devicons' -- icons
   use 'norcalli/nvim-colorizer.lua' -- colorizer
-  use 'nvim-lualine/lualine.nvim' -- statusline on bottom
 end)
