@@ -19,7 +19,6 @@ return require('packer').startup(function()
   use 'jose-elias-alvarez/null-ls.nvim' -- formatting
 
   -- navigation
-  use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim' -- file finder
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- fuzzy finder

@@ -10,6 +10,7 @@ require('nvim-treesitter.configs').setup {
       'tsx',
       'typescript',
       'typescriptreact',
+      'xml'
     },
   },
   ensure_installed = {
