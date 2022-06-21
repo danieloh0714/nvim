@@ -33,7 +33,6 @@ for _, server in ipairs({
   'jsonls',
   'pyright',
   'rust_analyzer',
-  'tailwindcss',
   'tsserver',
 }) do
   local opts = {
