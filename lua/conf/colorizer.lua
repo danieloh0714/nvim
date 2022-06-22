@@ -1,4 +1,7 @@
-require('colorizer').setup {
-  '*'; -- highlight all files, but customize others
-  '!packer'; -- exclude packer from highlighting
-}
+require('colorizer').setup (
+  {
+    '*'; -- highlight all files, but customize others
+    '!packer'; -- exclude packer from highlighting
+  },
+  { names = false }
+)
