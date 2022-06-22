@@ -3,7 +3,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
-  use 'AlphaTechnolog/pywal.nvim'
+  use 'luisiacc/gruvbox-baby'
 
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
