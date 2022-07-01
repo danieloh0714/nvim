@@ -1,6 +1,10 @@
-vim.g.gruvbox_baby_background_color = 'medium'
-vim.g.gruvbox_baby_transparent_mode = true
-vim.g.gruvbox_baby_keyword_style = 'NONE'
-vim.g.gruvbox_baby_function_style = 'NONE'
+require('rose-pine').setup({
+  dark_variant = 'moon',
+  bold_vert_split = false,
+  dim_nc_background = false,
+  disable_background = true,
+  disable_float_background = false,
+  disable_italics = true,
+})
 
-vim.cmd[[colorscheme gruvbox-baby]]
+vim.cmd('colorscheme rose-pine')

@@ -3,7 +3,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
-  use 'luisiacc/gruvbox-baby'
+  use 'rose-pine/neovim'
 
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- treesitter
@@ -31,4 +31,5 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons' -- icons
   use 'norcalli/nvim-colorizer.lua' -- colorizer
   use 'nvim-lualine/lualine.nvim' -- bottom status line
+  use 'Pocco81/TrueZen.nvim' -- zen mode
 end)
