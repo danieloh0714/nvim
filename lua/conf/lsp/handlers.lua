@@ -28,12 +28,9 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 for _, server in ipairs({
   'cssls',
-  'gopls',
   'html',
   'jsonls',
   'pyright',
-  'rust_analyzer',
-  'tsserver',
 }) do
   local opts = {
     on_attach = on_attach,
