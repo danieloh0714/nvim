@@ -13,12 +13,12 @@ local function set_keymaps(bufnr)
   keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
   keymap('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
   keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
-  keymap('n', '<space>fo', '<cmd>lua vim.lsp.buf.formatting()<cr>', opts)
+  keymap('n', '<space>fo', '<cmd>lua vim.lsp.buf.format{ async = true }<cr>', opts)
 end
 
 local on_attach = function(client, bufnr)
   if client.name == 'tsserver' then
-    client.resolved_capabilities.document_formatting = false
+    client.server_capabilities.document_formatting = false
   end
 
   set_keymaps(bufnr)
@@ -31,6 +31,8 @@ for _, server in ipairs({
   'html',
   'jsonls',
   'pyright',
+  'tailwindcss',
+  'tsserver',
 }) do
   local opts = {
     on_attach = on_attach,
