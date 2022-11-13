@@ -31,5 +31,4 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons' -- icons
   use 'norcalli/nvim-colorizer.lua' -- colorizer
   use 'nvim-lualine/lualine.nvim' -- bottom status line
-  use 'Pocco81/TrueZen.nvim' -- zen mode
 end)
