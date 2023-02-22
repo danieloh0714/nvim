@@ -22,7 +22,7 @@ return require('packer').startup(function()
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim' -- file finder
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- fuzzy finder
-  use 'kyazdani42/nvim-tree.lua' -- tree explorer on side
+  use 'nvim-tree/nvim-tree.lua' -- tree explorer on side
   use 'akinsho/nvim-bufferline.lua' -- tab-like buffers on top
   use 'goolord/alpha-nvim' -- starting page
 

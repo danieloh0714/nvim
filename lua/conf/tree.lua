@@ -1,7 +1,4 @@
 require('nvim-tree').setup {
-  ignore_ft_on_setup = {
-    'alpha',
-  },
   actions = {
     open_file = {
       quit_on_open = true, -- close tree after opening file
