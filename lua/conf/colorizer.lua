@@ -1,7 +1,9 @@
-require('colorizer').setup (
-  {
-    '*'; -- highlight all files, but customize others
+require 'colorizer'.setup {
+  filetypes = {
+    '*'; -- highlight all files, but customize some others
     '!packer'; -- exclude packer from highlighting
   },
-  { names = false }
-)
+  user_default_options = {
+    names = false,
+  }
+}

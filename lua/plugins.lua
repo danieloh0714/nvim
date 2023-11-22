@@ -29,6 +29,6 @@ return require('packer').startup(function()
   -- other
   use 'akinsho/toggleterm.nvim' -- toggle terminal
   use 'kyazdani42/nvim-web-devicons' -- icons
-  use 'norcalli/nvim-colorizer.lua' -- colorizer
+  use 'NvChad/nvim-colorizer.lua' -- colorizer
   use 'nvim-lualine/lualine.nvim' -- bottom status line
 end)
