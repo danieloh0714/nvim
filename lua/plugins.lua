@@ -1,6 +1,7 @@
 return {
   -- colorscheme
   'kvrohit/rasmus.nvim',
+  'neanias/everforest-nvim',
 
   -- Treesitter
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, -- treesitter
@@ -25,6 +26,7 @@ return {
 
   -- other
   'akinsho/toggleterm.nvim', -- toggle terminal
+  'folke/zen-mode.nvim', -- zen mode
   'kyazdani42/nvim-web-devicons', -- icons
   'numToStr/Comment.nvim', -- commenting
   'NvChad/nvim-colorizer.lua', -- colorizer
