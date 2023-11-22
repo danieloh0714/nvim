@@ -26,6 +26,7 @@ return {
   -- other
   'akinsho/toggleterm.nvim', -- toggle terminal
   'kyazdani42/nvim-web-devicons', -- icons
+  'numToStr/Comment.nvim', -- commenting
   'NvChad/nvim-colorizer.lua', -- colorizer
   'nvim-lualine/lualine.nvim', -- bottom status line
 }
