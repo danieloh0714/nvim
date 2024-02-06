@@ -14,7 +14,6 @@ return {
   'hrsh7th/nvim-cmp', -- autocompletion
   'saadparwaiz1/cmp_luasnip', -- snippets source for nvim-cmp
   'L3MON4D3/LuaSnip', -- snippets plugin
-  'jose-elias-alvarez/null-ls.nvim', -- formatting
 
   -- navigation
   'nvim-lua/plenary.nvim',
