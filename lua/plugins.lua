@@ -1,7 +1,6 @@
 return {
   -- colorscheme
-  'kvrohit/rasmus.nvim',
-  'neanias/everforest-nvim',
+  'shaunsingh/nord.nvim',
 
   -- Treesitter
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, -- treesitter

@@ -1,8 +1,6 @@
-vim.g.rasmus_transparent = false
--- vim.g.rasmus_variant = 'monochrome'
-vim.cmd[[colorscheme rasmus]]
+vim.g.nord_contrast = true
+vim.g.nord_borders = true
+vim.g.nord_disable_background = false
+vim.g.nord_italic = false
 
-vim.o.background = 'light'
-require("everforest").setup({
-  background = 'soft'
-})
+require('nord').set()
