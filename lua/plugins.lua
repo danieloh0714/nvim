@@ -1,6 +1,6 @@
 return {
   -- colorscheme
-  'shaunsingh/nord.nvim',
+  'neanias/everforest-nvim',
 
   -- Treesitter
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, -- treesitter
