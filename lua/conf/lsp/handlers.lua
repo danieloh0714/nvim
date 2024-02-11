@@ -45,8 +45,3 @@ for _, server in ipairs({
 
   lsp[server].setup(opts)
 end
-
--- add borders around hover
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-  border = "rounded",
-})
