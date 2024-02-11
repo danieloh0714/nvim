@@ -7,6 +7,5 @@ opt.shiftwidth = 2 -- number of spaces for each indentation
 opt.tabstop = 2 -- number of spaces for a tab
 opt.signcolumn = 'no' -- no sign column
 opt.linebreak = true -- don't wrap words to next line
-opt.scrolloff = 20
 
 vim.g.python3_host_prog = '/usr/bin/python3'
