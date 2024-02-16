@@ -1,4 +1,4 @@
-local lsp = require('lspconfig')
+local lspconfig = require('lspconfig')
 
 local function set_keymaps(bufnr)
   local function keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
@@ -30,6 +30,7 @@ for _, server in ipairs({
   'cssls',
   'html',
   'jsonls',
+  'lua_ls',
   'pyright',
   'tailwindcss',
   'tsserver',
@@ -43,5 +44,9 @@ for _, server in ipairs({
     opts = vim.tbl_deep_extend('force', require('conf.lsp.settings.tailwindcss'), opts)
   end
 
-  lsp[server].setup(opts)
+  if server == 'lua_ls' then
+    opts = vim.tbl_deep_extend('force', require('conf.lsp.settings.lua_ls'), opts)
+  end
+
+  lspconfig[server].setup(opts)
 end
