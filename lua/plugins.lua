@@ -1,6 +1,6 @@
 return {
   -- colorscheme
-  'neanias/everforest-nvim',
+  'rose-pine/neovim',
 
   -- Treesitter
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, -- treesitter
