@@ -1,4 +1,10 @@
 require("zen-mode").setup({
+  window = {
+    width = 100,
+    options = {
+      number = false,
+    }
+  },
   plugins = {
     alacritty = {
       enabled = true,
