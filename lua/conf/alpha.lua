@@ -7,7 +7,6 @@ startify.section.mru_cwd.val = { { type = 'padding', val = 0 } }
 startify.section.bottom_buttons.val = {
   startify.button('a', 'alacritty', ':e $HOME/.config/alacritty<cr>'),
   startify.button('b', 'bspwm', ':e $HOME/.config/bspwm/bspwmrc<cr>'),
-  startify.button('d', 'dunst', ':e $HOME/.config/dunst/dunstrc<cr>'),
   startify.button('n', 'nvim', ':e $HOME/.config/nvim<cr>'),
   startify.button('p', 'polybar', ':e $HOME/.config/polybar<cr>'),
   startify.button('s', 'sxhkd', ':e $HOME/.config/sxhkd/sxhkdrc<cr>'),
