@@ -15,9 +15,8 @@ return {
   'L3MON4D3/LuaSnip', -- snippets plugin
 
   -- navigation
-  'nvim-lua/plenary.nvim',
   { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }, -- fuzzy finder
-  'nvim-telescope/telescope.nvim', -- file finder
+  { 'nvim-telescope/telescope.nvim', tag = '0.1.5', dependencies = { 'nvim-lua/plenary.nvim' } },
   'nvim-tree/nvim-tree.lua', -- tree explorer on side
   'akinsho/nvim-bufferline.lua', -- tab-like buffers on top
   'goolord/alpha-nvim', -- starting page

@@ -12,7 +12,7 @@ local function set_keymaps(bufnr)
   keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
   keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
   keymap('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
-  keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
+  keymap('n', 'gr', ':Telescope lsp_references<cr>', opts)
   keymap('n', '<space>fo', '<cmd>lua vim.lsp.buf.format{ async = true }<cr>', opts)
 end
 
