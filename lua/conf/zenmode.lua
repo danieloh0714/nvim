@@ -1,4 +1,4 @@
-require("zen-mode").setup({
+require('zen-mode').setup({
   window = {
     width = 100,
     options = {
@@ -8,7 +8,7 @@ require("zen-mode").setup({
   plugins = {
     alacritty = {
       enabled = true,
-      font = "18",
+      font = '18',
     }
   }
 })

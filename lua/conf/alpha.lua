@@ -13,7 +13,7 @@ startify.section.bottom_buttons.val = {
   startify.button('s', 'sxhkd', ':e $HOME/.config/sxhkd/sxhkdrc<cr>'),
   startify.button('x', 'xinitrc', ':e $HOME/.config/X11/xinitrc<cr>'),
   startify.button('z', 'zshrc', ':e $HOME/.config/zsh/.zshrc<cr>'),
-  startify.button('q', 'quit' , ':qa<cr>'),
+  startify.button('q', 'quit', ':qa<cr>'),
 }
 
 require('alpha').setup(startify.config)
