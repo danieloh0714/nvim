@@ -1,10 +1,2 @@
-require('rose-pine').setup({
-  variant = 'main',
-  styles = {
-    bold = false,
-    italic = false,
-    transparency = true,
-  },
-})
-
-vim.cmd [[colorscheme rose-pine]]
+vim.g.gruvbox_material_transparent_background = 1
+vim.cmd [[colorscheme gruvbox-material]]

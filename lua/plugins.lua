@@ -1,6 +1,6 @@
 return {
   -- colorscheme
-  'rose-pine/neovim',
+  'sainnhe/gruvbox-material',
 
   -- Treesitter
   { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, -- treesitter
