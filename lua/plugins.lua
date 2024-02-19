@@ -28,5 +28,4 @@ return {
   'kyazdani42/nvim-web-devicons', -- icons
   'numToStr/Comment.nvim', -- commenting
   'NvChad/nvim-colorizer.lua', -- colorizer
-  'lukas-reineke/indent-blankline.nvim', -- indent lines
 }
