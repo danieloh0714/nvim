@@ -33,8 +33,8 @@ for _, server in ipairs({
   'jsonls',
   'lua_ls',
   'pyright',
+  'rust_analyzer',
   'tailwindcss',
-  'tsserver',
 }) do
   local opts = {
     on_attach = on_attach,
