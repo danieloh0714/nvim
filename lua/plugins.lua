@@ -1,6 +1,5 @@
 return {
   -- colorscheme
-  'sainnhe/gruvbox-material',
   'rose-pine/neovim',
 
   -- Treesitter
@@ -21,7 +20,6 @@ return {
   'nvim-tree/nvim-tree.lua', -- tree explorer on side
   'akinsho/nvim-bufferline.lua', -- tab-like buffers on top
   'goolord/alpha-nvim', -- starting page
-  'nvim-lualine/lualine.nvim', -- status line
 
   -- other
   'akinsho/toggleterm.nvim', -- toggle terminal
