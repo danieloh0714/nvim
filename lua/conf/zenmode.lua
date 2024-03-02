@@ -1,16 +1,16 @@
 require('zen-mode').setup({
-  window = {
-    width = 100,
-    options = {
-      number = false,
+    window = {
+        width = 100,
+        options = {
+            number = false,
+        }
+    },
+    plugins = {
+        alacritty = {
+            enabled = true,
+            font = '18',
+        }
     }
-  },
-  plugins = {
-    alacritty = {
-      enabled = true,
-      font = '18',
-    }
-  }
 })
 
 local keymap = vim.api.nvim_set_keymap

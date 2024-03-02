@@ -1,11 +1,11 @@
 return {
-  filetypes = {
-    'html',
-    'css',
-    'postcss',
-    'javascript',
-    'javascriptreact',
-    'typescript',
-    'typescriptreact',
-  },
+    filetypes = {
+        'html',
+        'css',
+        'postcss',
+        'javascript',
+        'javascriptreact',
+        'typescript',
+        'typescriptreact',
+    },
 }
