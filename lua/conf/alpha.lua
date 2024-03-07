@@ -9,7 +9,6 @@ startify.section.bottom_buttons.val = {
     startify.button('h', 'hyprland', ':e $HOME/.config/hypr<cr>'),
     startify.button('n', 'nvim', ':e $HOME/.config/nvim<cr>'),
     startify.button('w', 'waybar', ':e $HOME/.config/waybar<cr>'),
-    startify.button('z', 'zshrc', ':e $HOME/.config/zsh/.zshrc<cr>'),
     startify.button('q', 'quit', ':qa<cr>'),
 }
 
