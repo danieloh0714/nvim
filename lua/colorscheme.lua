@@ -10,7 +10,7 @@ require('rose-pine').setup({
     highlight_groups = {
         NvimTreeNormal = { bg = '#191724' },
         NvimTreeWinSeparator = { bg = '#191724', fg = '#191724' },
-    }
+    },
 })
 
 vim.cmd [[colorscheme rose-pine]]

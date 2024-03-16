@@ -12,7 +12,7 @@ keymap('i', '<c-h>', '<c-w>', opts)
 keymap('n', '<space>', '<nop>', opts)
 vim.g.mapleader = ' '
 
--- no hl
+-- toggle no highlight
 keymap('n', '<leader>h', ':set hlsearch!<cr>', opts)
 
 -- no wrap
