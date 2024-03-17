@@ -34,7 +34,6 @@ for _, server in ipairs({
     'lua_ls',
     'pyright',
     'rust_analyzer',
-    'tailwindcss',
 }) do
     local opts = {
         on_attach = on_attach,
@@ -43,10 +42,6 @@ for _, server in ipairs({
 
     if server == 'lua_ls' then
         opts = vim.tbl_deep_extend('force', require('conf.lsp.settings.lua_ls'), opts)
-    end
-
-    if server == 'tailwindcss' then
-        opts = vim.tbl_deep_extend('force', require('conf.lsp.settings.tailwindcss'), opts)
     end
 
     lspconfig[server].setup(opts)
