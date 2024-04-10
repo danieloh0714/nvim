@@ -27,6 +27,7 @@ end
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 for _, server in ipairs({
+    'clangd',
     'cssls',
     'gopls',
     'html',

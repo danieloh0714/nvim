@@ -36,6 +36,7 @@ require('nvim-treesitter.configs').setup {
         'gomod',
         'gosum',
         'gpg',
+        'haskell',
         'html',
         'hyprlang',
         'javascript',

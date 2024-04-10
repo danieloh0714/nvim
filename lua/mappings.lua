@@ -32,6 +32,3 @@ keymap('v', '>', '>gv', opts)
 
 -- toggle windows
 keymap('n', '<leader>w', '<c-w>w', opts)
-
--- compile document
-keymap('n', '<leader>cd', ':!compiledocument %<cr>', opts)

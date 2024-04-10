@@ -2,7 +2,7 @@ return {
     -- colorschemes
     'rose-pine/neovim',
     'sainnhe/gruvbox-material',
-    'shaunsingh/nord.nvim',
+    'gbprod/nord.nvim',
     'neanias/everforest-nvim',
 
     -- Treesitter
@@ -31,5 +31,5 @@ return {
     'numToStr/Comment.nvim', -- commenting
     'NvChad/nvim-colorizer.lua', -- colorizer
     'lukas-reineke/indent-blankline.nvim', -- indent lines
-    'RRethy/vim-illuminate' -- illuminate words,
+    'RRethy/vim-illuminate', -- illuminate words
 }
