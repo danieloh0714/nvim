@@ -48,7 +48,6 @@ require('nvim-treesitter.configs').setup {
         'make',
         'markdown',
         'meson',
-        'muttrc',
         'objdump',
         'python',
         'rust',
