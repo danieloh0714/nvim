@@ -32,3 +32,6 @@ keymap('v', '>', '>gv', opts)
 
 -- toggle windows
 keymap('n', '<leader>w', '<c-w>w', opts)
+
+-- copy file contents to system clipboard
+keymap('n', '<leader>cp', ':%y+<cr>', opts)
