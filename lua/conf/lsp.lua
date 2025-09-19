@@ -12,7 +12,6 @@ for _, server in ipairs({
     vim.lsp.enable(server)
 end
 
-local function keymap(...) vim.api.nvim_buf_set_keymap(0, ...) end
 local opts = { noremap = true, silent = true }
 
 vim.api.nvim_create_autocmd('LspAttach', {
@@ -24,11 +23,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end
 
         if client:supports_method('textDocument/format') then
-            keymap('n', '<space>fo', '<cmd>lua vim.lsp.buf.format{ async = true }<cr>', opts)
+            vim.api.nvim_buf_set_keymap(ev.buf, 'n', '<space>fo', '<cmd>lua vim.lsp.buf.format{ async = true }<cr>', opts)
         end
 
         if client:supports_method('textDocument/lsp_references') then
-            keymap('n', 'grr', ':Telescope lsp_references<cr>', opts)
+            vim.api.nvim_buf_set_keymap(ev.buf, 'n', 'grr', ':Telescope lsp_references<cr>', opts)
         end
     end,
 })

@@ -12,7 +12,7 @@ return {
     'windwp/nvim-ts-autotag', -- autotags for html, jsx, tsx, etc.
 
     -- LSP
-    'neovim/nvim-lspconfig', --- language server protocol
+    'neovim/nvim-lspconfig', -- language server protocol
 
     -- navigation
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }, -- fuzzy finder

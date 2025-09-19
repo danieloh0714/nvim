@@ -1,1 +1,1 @@
-require('colorschemes.night')
+require('colorschemes.rose-pine')
