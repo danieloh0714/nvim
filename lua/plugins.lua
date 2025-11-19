@@ -13,6 +13,7 @@ return {
 
     -- LSP
     'neovim/nvim-lspconfig', -- language server protocol
+    { 'rachartier/tiny-inline-diagnostic.nvim', event = 'VeryLazy', priority = 1000 }, -- show diagnostics
 
     -- navigation
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }, -- fuzzy finder
