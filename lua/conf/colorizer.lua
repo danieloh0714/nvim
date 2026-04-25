@@ -4,6 +4,6 @@ require('colorizer').setup {
         '!lazy', -- exclude lazy from highlighting
     },
     user_default_options = {
-        names = false,
-    }
+        suppress_deprecation = true, -- hide the info message about the new options format
+    },
 }

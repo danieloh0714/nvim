@@ -1,4 +1,5 @@
 local startify = require('alpha.themes.startify')
+startify.file_icons.provider = 'devicons'
 
 startify.section.top_buttons.val = {}
 

@@ -26,7 +26,7 @@ return {
     'akinsho/toggleterm.nvim', -- toggle terminal
     'folke/zen-mode.nvim', -- zen mode
     'nvim-tree/nvim-web-devicons', -- icons
-    'NvChad/nvim-colorizer.lua', -- colorizer
+    'catgoose/nvim-colorizer.lua', -- colorizer
     'lukas-reineke/indent-blankline.nvim', -- indent lines
     'RRethy/vim-illuminate', -- illuminate words
 }

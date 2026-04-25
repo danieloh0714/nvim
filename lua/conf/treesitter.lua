@@ -22,7 +22,6 @@ local file_types = {
     'hyprlang',
     'javascript',
     'json',
-    'jsonc',
     'latex',
     'llvm',
     'lua',
