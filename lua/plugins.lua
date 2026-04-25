@@ -1,32 +1,29 @@
-return {
+vim.pack.add({
     -- colorschemes
-    'rose-pine/neovim',
-    'sainnhe/gruvbox-material',
-    'gbprod/nord.nvim',
-    'neanias/everforest-nvim',
-    'folke/tokyonight.nvim',
-
-    -- Treesitter
-    { 'nvim-treesitter/nvim-treesitter', branch = 'main', build = ':TSUpdate' }, -- treesitter
-    'windwp/nvim-autopairs', -- autopairs
-    'windwp/nvim-ts-autotag', -- autotags for html, jsx, tsx, etc.
-
-    -- LSP
-    'neovim/nvim-lspconfig', -- language server protocol
-    { 'rachartier/tiny-inline-diagnostic.nvim', event = 'VeryLazy', priority = 1000 }, -- show diagnostics
+    'https://github.com/rose-pine/neovim',
+    'https://github.com/sainnhe/gruvbox-material',
+    'https://github.com/gbprod/nord.nvim',
+    'https://github.com/neanias/everforest-nvim',
+    'https://github.com/folke/tokyonight.nvim',
 
     -- navigation
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }, -- fuzzy finder
-    { 'nvim-telescope/telescope.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
-    'nvim-tree/nvim-tree.lua', -- tree explorer on side
-    'akinsho/nvim-bufferline.lua', -- tab-like buffers on top
-    'goolord/alpha-nvim', -- starting page
+    'https://github.com/goolord/alpha-nvim', -- starting page
+    'https://github.com/akinsho/bufferline.nvim', -- tab-like buffers on top
+    'https://github.com/nvim-tree/nvim-tree.lua', -- side explorer
 
     -- other
-    'akinsho/toggleterm.nvim', -- toggle terminal
-    'folke/zen-mode.nvim', -- zen mode
-    'nvim-tree/nvim-web-devicons', -- icons
-    'catgoose/nvim-colorizer.lua', -- colorizer
-    'lukas-reineke/indent-blankline.nvim', -- indent lines
-    'RRethy/vim-illuminate', -- illuminate words
-}
+    'https://github.com/catgoose/nvim-colorizer.lua', -- colorizer
+    'https://github.com/lukas-reineke/indent-blankline.nvim', -- indent lines
+    'https://github.com/akinsho/toggleterm.nvim', -- floating terminal
+    'https://github.com/folke/zen-mode.nvim', -- zen mode
+    'https://github.com/nvim-tree/nvim-web-devicons', -- icons
+})
+
+require('conf.alpha')
+require('conf.bufferline')
+require('conf.tree')
+
+require('conf.colorizer')
+require('conf.indentline')
+require('conf.toggleterm')
+require('conf.zenmode')
